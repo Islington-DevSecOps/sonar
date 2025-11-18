@@ -34,4 +34,4 @@ jobs:
 
       - name: "Check Number of Lines in authorized_keys file"
         run: |
-          ssh -t ubuntu@$SERVER_IP -i mykey.pem "wc -l /home/ubuntu/.ssh/authorized_keys | awk '{print $1}' | grep 1"
+          ssh -t ubuntu@$SERVER_IP -i mykey.pem "wc -l /home/ubuntu/.ssh/authorized_keys | awk '{print $1}' | grep 2"
